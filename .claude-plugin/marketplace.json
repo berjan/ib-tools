@@ -1,0 +1,30 @@
+{
+  "name": "ib-tools",
+  "owner": {
+    "name": "Berjan Bruens"
+  },
+  "metadata": {
+    "description": "Collection of developer utility plugins for file conversion and skill creation",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "mermaid-to-image",
+      "source": "./plugins/mermaid-to-image",
+      "description": "Convert Mermaid diagram files (.mmd) to PNG, SVG, or PDF using uvx mmdc",
+      "version": "1.0.0"
+    },
+    {
+      "name": "pdf-to-markdown",
+      "source": "./plugins/pdf-to-markdown",
+      "description": "Convert PDF and other document formats to Markdown using Microsoft's markitdown via uvx",
+      "version": "1.0.0"
+    },
+    {
+      "name": "skill-creator",
+      "source": "./plugins/skill-creator",
+      "description": "Guide for creating effective skills and plugins that extend Claude's capabilities",
+      "version": "1.0.0"
+    }
+  ]
+}

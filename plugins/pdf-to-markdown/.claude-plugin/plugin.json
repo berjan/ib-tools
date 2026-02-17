@@ -1,0 +1,5 @@
+{
+  "name": "pdf-to-markdown",
+  "description": "Convert PDF and other document formats to Markdown using Microsoft's markitdown via uvx",
+  "version": "1.0.0"
+}

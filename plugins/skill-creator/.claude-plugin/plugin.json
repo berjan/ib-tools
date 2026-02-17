@@ -1,0 +1,5 @@
+{
+  "name": "skill-creator",
+  "description": "Guide for creating effective skills and plugins. Use when you want to create a new skill or plugin that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
+  "version": "1.0.0"
+}

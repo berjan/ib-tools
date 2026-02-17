@@ -1,0 +1,5 @@
+{
+  "name": "mermaid-to-image",
+  "description": "Convert Mermaid diagram files (.mmd) to PNG, SVG, or PDF using uvx mmdc",
+  "version": "1.0.0"
+}
