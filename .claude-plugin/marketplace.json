@@ -25,6 +25,12 @@
       "source": "./plugins/skill-creator",
       "description": "Guide for creating effective skills and plugins that extend Claude's capabilities",
       "version": "1.0.0"
+    },
+    {
+      "name": "slack-bot",
+      "source": "./plugins/slack-bot",
+      "description": "Read messages from Slack channels using the Slack Web API via curl",
+      "version": "1.0.0"
     }
   ]
 }

@@ -1,0 +1,5 @@
+{
+  "name": "slack-bot",
+  "description": "Read messages from Slack channels using the Slack Web API via curl",
+  "version": "1.0.0"
+}
