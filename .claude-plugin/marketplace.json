@@ -31,6 +31,12 @@
       "source": "./plugins/slack-bot",
       "description": "Read messages from Slack channels using the Slack Web API via curl",
       "version": "1.0.0"
+    },
+    {
+      "name": "slack-personal",
+      "source": "./plugins/slack-personal",
+      "description": "Read DMs, group messages, and channel conversations from Slack via the Web API",
+      "version": "1.0.0"
     }
   ]
 }
