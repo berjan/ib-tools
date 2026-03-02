@@ -17,6 +17,7 @@ A marketplace is a git repository with a `.claude-plugin/marketplace.json` that 
 | `mermaid-to-image` | Convert `.mmd` files to PNG/SVG/PDF | `uvx mmdc -i input.mmd -o output.png` |
 | `pdf-to-markdown` | Convert PDF/DOCX/PPTX to Markdown | `uvx --from 'markitdown[pdf]' markitdown input.pdf -o output.md` |
 | `skill-creator` | Guide for creating new skills and plugins | Follow the workflow to scaffold and package skills |
+| `playwright-cli` | Automate browser interactions for web testing and extraction | `playwright-cli open https://example.com` |
 
 ## Install for users
 
@@ -28,6 +29,7 @@ A marketplace is a git repository with a `.claude-plugin/marketplace.json` that 
 /plugin install mermaid-to-image@ib-tools
 /plugin install pdf-to-markdown@ib-tools
 /plugin install skill-creator@ib-tools
+/plugin install playwright-cli@ib-tools
 ```
 
 ## Update
