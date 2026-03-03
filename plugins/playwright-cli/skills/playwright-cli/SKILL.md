@@ -6,6 +6,27 @@ allowed-tools: Bash(playwright-cli:*)
 
 # Browser Automation with playwright-cli
 
+## Prerequisites
+
+Before using playwright-cli, ensure the following are installed:
+
+```bash
+# 1. Install Node.js (if not already available)
+#    See https://nodejs.org/ or use your package manager
+
+# 2. Install playwright-cli globally
+npm install -g @playwright/cli@latest
+
+# 3. Install a browser
+npx playwright install chrome
+```
+
+**Running as root or in a container?** Set this environment variable to disable the Chrome sandbox:
+
+```bash
+export PLAYWRIGHT_MCP_SANDBOX=false
+```
+
 ## Quick start
 
 ```bash
