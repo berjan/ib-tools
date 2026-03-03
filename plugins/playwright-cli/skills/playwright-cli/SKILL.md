@@ -1,23 +1,20 @@
 ---
 name: playwright-cli
 description: Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the user needs to navigate websites, interact with web pages, fill forms, take screenshots, test web applications, or extract information from web pages.
-allowed-tools: Bash(playwright-cli:*)
+allowed-tools: Bash(playwright-cli:*,npm install -g @playwright/cli:*,npx playwright install:*)
 ---
 
 # Browser Automation with playwright-cli
 
 ## Prerequisites
 
-Before using playwright-cli, ensure the following are installed:
+If `playwright-cli` is not available, install it:
 
 ```bash
-# 1. Install Node.js (if not already available)
-#    See https://nodejs.org/ or use your package manager
-
-# 2. Install playwright-cli globally
+# 1. Install playwright-cli globally (requires Node.js)
 npm install -g @playwright/cli@latest
 
-# 3. Install a browser
+# 2. Install a browser
 npx playwright install chrome
 ```
 
