@@ -27,6 +27,25 @@ npx playwright install chrome
 export PLAYWRIGHT_MCP_SANDBOX=false
 ```
 
+## Cloudflare Access (Service Token)
+
+If the target site is behind a Cloudflare Access tunnel, set the service token credentials in your `.env` file:
+
+```
+CF_ACCESS_CLIENT_ID=your-client-id.access
+CF_ACCESS_CLIENT_SECRET=your-client-secret
+```
+
+Then inject the headers before navigating:
+
+```bash
+playwright-cli open
+playwright-cli run-code "async page => { await page.context().setExtraHTTPHeaders({'CF-Access-Client-Id': '$CF_ACCESS_CLIENT_ID', 'CF-Access-Client-Secret': '$CF_ACCESS_CLIENT_SECRET'}); }"
+playwright-cli goto https://your-protected-site.example.com
+```
+
+Make sure to `source .env` or export the variables before running the commands.
+
 ## Quick start
 
 ```bash
