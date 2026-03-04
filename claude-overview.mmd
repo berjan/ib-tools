@@ -1,0 +1,50 @@
+graph TB
+    Anyone["Anyone"] --> Desktop
+    Teams["Teams & Organizations"] --> CoWork
+    Devs["Developers"] --> Code
+
+    subgraph Claude["Claude — AI by Anthropic"]
+
+        subgraph Desktop["Claude Desktop"]
+            D1["Web & native app"]
+            D2["Chat interface for everyone"]
+            D3["Upload files, images, PDFs"]
+            D4["Create & share artifacts"]
+            D5["Projects for persistent context"]
+        end
+
+        subgraph CoWork["Claude CoWork"]
+            CW1["Shared AI workspace"]
+            CW2["Real-time collaboration"]
+            CW3["Team knowledge & memory"]
+            CW4["Delegate tasks to Claude"]
+            CW5["Integrations: Slack, Google, etc."]
+        end
+
+        subgraph Code["Claude Code"]
+            CC1["CLI tool in your terminal"]
+            CC2["Reads & writes code directly"]
+            CC3["Runs commands & tests"]
+            CC4["Git & GitHub integration"]
+            CC5["Skills, plugins & MCP servers"]
+        end
+    end
+
+    Desktop --> UC1["Ask questions & brainstorm"]
+    Desktop --> UC2["Write, summarize & analyze"]
+    CoWork --> UC1
+    CoWork --> UC2
+    CoWork --> UC3["Collaborate with your team"]
+    Code --> UC2
+    Code --> UC4["Build software end-to-end"]
+
+    style Desktop fill:#4f46e5,stroke:#3730a3,color:#fff
+    style CoWork fill:#7c3aed,stroke:#5b21b6,color:#fff
+    style Code fill:#ea580c,stroke:#c2410c,color:#fff
+    style Anyone fill:#059669,stroke:#047857,color:#fff
+    style Teams fill:#059669,stroke:#047857,color:#fff
+    style Devs fill:#059669,stroke:#047857,color:#fff
+    style UC1 fill:#f1f5f9,stroke:#94a3b8,color:#334155
+    style UC2 fill:#f1f5f9,stroke:#94a3b8,color:#334155
+    style UC3 fill:#f1f5f9,stroke:#94a3b8,color:#334155
+    style UC4 fill:#f1f5f9,stroke:#94a3b8,color:#334155
